@@ -26,7 +26,7 @@ pipeline {
 		stage('Deploying War to Tomcat ') {
             
                 steps { 
-             echo "Building Image in Utility Container"
+             echo "Deploying in Tomcat"
                     sh 'cp /var/lib/jenkins/workspace/CI-CD-NED-Project/jsp-helloworld/target/jsp-helloworld-1.0-SNAPSHOT.war /opt/tomcat/apache-tomcat-9.0.16/webapps/ned.war '
                     
            
@@ -50,7 +50,7 @@ pipeline {
             
                 steps { 
              echo "Building Image in Utility Container"
-                    sh 'sh /opt/tomcat/apache-tomcat-9.0.16/bin/startup.sh'
+                    sh 'systemctl enable tomcat && sh /opt/tomcat/apache-tomcat-9.0.16/bin/startup.sh'
                     
               
             }
