@@ -9,7 +9,7 @@ pipeline {
         stage('checking out') {
            
             steps { 
-             echo "Checking out to Mounted Volume"
+             echo "Checking Out Code!"
               
             }
         }
@@ -17,18 +17,45 @@ pipeline {
             
                 steps { 
              echo "Building Image in Utility Container"
-                    sh 'mvn package'
+                    sh 'cd /var/lib/jenkins/workspace/CI-CD-NED-Project/jsp-helloworld && mvn package'
                     
               
             }
 	    }
+	
+		stage('Deploying War to Tomcat ') {
+            
+                steps { 
+             echo "Building Image in Utility Container"
+                    sh 'cp /var/lib/jenkins/workspace/CI-CD-NED-Project/jsp-helloworld/target/jsp-helloworld-1.0-SNAPSHOT.war /opt/tomcat/apache-tomcat-9.0.16/webapps/ned.war '
+                    
            
 			
-          
+		}
+		}
+		
 	
+		 stage('Stopping Tomcat') {
+            
+                steps { 
+             echo "Building Image in Utility Container"
+                    sh 'sh /opt/tomcat/apache-tomcat-9.0.16/bin/shutdown.sh'
+                    
+              
+            }
+	    }
 	        
 		
-		
+		stage('Starting Tomcat') {
+            
+                steps { 
+             echo "Building Image in Utility Container"
+                    sh 'sh /opt/tomcat/apache-tomcat-9.0.16/bin/startup.sh'
+                    
+              
+            }
+	    }
+	        
             
             
             
