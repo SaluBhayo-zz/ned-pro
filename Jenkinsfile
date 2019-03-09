@@ -46,15 +46,13 @@ pipeline {
 	    }
 	        
 		
-		stage('Starting Tomcat') {
+		
+		stage('Starting Tomcat ') 
+{
+    build 'Tomcat-Start'
+}
             
-                steps { 
-             echo "Building Image in Utility Container"
-                    sh 'systemctl enable tomcat && cd /opt/tomcat/apache-tomcat-9.0.16/bin/ && ./startup.sh'
-                    
-              
-            }
-	    }
+                
 	        
             
             
