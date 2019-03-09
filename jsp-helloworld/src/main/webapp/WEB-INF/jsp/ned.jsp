@@ -9,7 +9,7 @@
 <body>
     <div class="main-container">
         <div class="cloud-image">
-            <img src="img/successCloudNew.svg" />
+            <img src="img/large.jpg" />
         </div>
         <div class="content">
             <div class="tweet-container">
