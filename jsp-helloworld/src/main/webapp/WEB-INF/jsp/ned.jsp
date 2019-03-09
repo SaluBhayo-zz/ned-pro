@@ -7,10 +7,11 @@
 </head>
 
 <body>
+	color:red;
     
         </div>
             <div class="content-body">
-                <div class="success-text">Hey Class!</div>
+		    <div class="success-text"><h1>Hey Class!! </h1></div>
                 <div class="description line-1"> I Study in NED....</div>
                 <div class="description line-2">Hello Class what's up!!!....!!!) </div>
                 <div class="next-steps-container">
