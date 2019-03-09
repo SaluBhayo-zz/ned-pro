@@ -19,7 +19,7 @@
         </div>
             <div class="content-body">
                 <div class="success-text">Hey Class!</div>
-                <div class="description line-1"> You wanna have some fun</div>
+                <div class="description line-1"> I Study in NED</div>
                 <div class="description line-2"> I love Pakistan </div>
                 <div class="next-steps-container">
                     <div class="next-steps-header">Next up</div>
