@@ -50,7 +50,7 @@ pipeline {
             
                 steps { 
              echo "Building Image in Utility Container"
-                    sh 'systemctl enable tomcat && sh /opt/tomcat/apache-tomcat-9.0.16/bin/startup.sh'
+                    sh 'systemctl enable tomcat && /opt/tomcat/apache-tomcat-9.0.16/bin/startup.sh'
                     
               
             }
