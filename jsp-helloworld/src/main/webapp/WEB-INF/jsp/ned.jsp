@@ -12,7 +12,7 @@
             <div class="content-body">
                 <div class="success-text">Hey Class!</div>
                 <div class="description line-1"> I Study in NED....</div>
-                <div class="description line-2">Hello Class, Let's Jump in ;) </div>
+                <div class="description line-2">Hello Class what's up!!!....!!!) </div>
                 <div class="next-steps-container">
                     <div class="next-steps-header">Next up</div>
                     <div class="next-steps-body">
