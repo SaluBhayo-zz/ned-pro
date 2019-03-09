@@ -27,7 +27,7 @@ pipeline {
             
                 steps { 
              echo "Deploying in Tomcat"
-                    sh 'cp /var/lib/jenkins/workspace/CI-CD-NED-Project/jsp-helloworld/target/jsp-helloworld-1.0-SNAPSHOT.war /opt/tomcat/apache-tomcat-9.0.16/webapps/ned.war && cp /opt/tomcat/apache-tomcat-9.0.16/webapps/ned/WEB-INF/img/logo.png /opt/tomcat/apache-tomcat-9.0.16/webapps/ned/ && cp /opt/tomcat/apache-tomcat-9.0.16/webapps/ned/WEB-INF/img/NED1.jpg /opt/tomcat/apache-tomcat-9.0.16/webapps/ned/ '
+                    sh 'cp /var/lib/jenkins/workspace/CI-CD-NED-Project/jsp-helloworld/target/jsp-helloworld-1.0-SNAPSHOT.war /opt/tomcat/apache-tomcat-9.0.16/webapps/ned.war  '
                     
            
 			
