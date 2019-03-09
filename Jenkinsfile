@@ -47,11 +47,13 @@ pipeline {
 	        
 		
 		
-		stage('Starting Tomcat ') 
+
+stage('Starting Container ') 
 {
+steps {
     build 'Tomcat-Start'
 }
-            
+}
                 
 	        
             
